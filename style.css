@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+.productContainer{
+
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productCard{
+    box-shadow: 6px 7px 32px rgb(0, 0, 0,0.25);
+    width: 800px;
+    min-height: 200px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.imageContainer{
+    flex: 1;
+    border-right: 1px solid black;
+    padding: 10px 30px;
+}
+
+.imageContainer img{
+    width: 100%;
+
+}
+
+.productContent{
+    flex: 5;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.productContent h2{
+    font-size: 2rem;
+}
+
+.productContent p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.productContent button{
+    font-size: 2rem;
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    margin-top: 10px;
+    align-self: end;
+    border-radius: 8px;
+}
+
+@media(max-width:856px){
+    .productCard{
+        width: 90%;
+    }
+}
+
+@media(max-width:515px){
+    .productCard{
+        flex-direction: column;
+        align-self: stretch;
+    }
+}
+
+.inputContainer{
+    width: 800px;
+    margin: auto;
+
+}
+
+.inputContainer input{
+    width: 100%;
+    height: 3rem;
+    font-size: 1.5rem;
+    padding-left: 3rem;
+    margin: 1.5rem;
+    margin-left: 0;
+    outline: none;
+}
+
+@media(max-width:856px){
+    .inputContainer{
+        width: 90%;
+    }
+}
